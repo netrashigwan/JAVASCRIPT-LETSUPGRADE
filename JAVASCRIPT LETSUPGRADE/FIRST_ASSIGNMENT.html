@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>DAY 1 ASSIGNMENT</title>
+        <h2>THIS IS FIRST ASSIGNMENT TO DISPLAY DATE AND TIME</h2>
+    </head>
+
+    <body>
+        <script>
+            document.write(Date());
+            var today = new Date();
+            var day = today.getDay();
+            var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+            document.write("<br><br>");
+            document.write("Today is : " + daylist[day] + ".");
+            var hour = today.getHours();
+            var minute = today.getMinutes();
+            var second = today.getSeconds();
+            document.write("<br><br>");
+            document.write("Current Time is :"+hour+"hr : "+minute+"min : "+second+"sec .");
+        </script>
+    </body>
+</html>
