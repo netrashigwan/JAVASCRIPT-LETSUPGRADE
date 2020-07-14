@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>DAY 1 ASSIGNMENT</title>
+        <h2>THIS IS THIRD ASSIGNMENT TO DISPLAY CURRENT DATE IN VARIOUS FORMAT.</h2>
+    </head>
+
+    <body>
+        <script>
+            document.write(Date());
+            document.write("<br><br>");
+            var today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth()+1; 
+            var yyyy = today.getFullYear();
+            document.write("date in format mm-dd-yyyy : "+mm+"-"+dd+"-"+yyyy+".");
+            document.write("<br><br>");
+            document.write("date in format mm/dd/yyyy : "+mm+"/"+dd+"/"+yyyy+".");
+            document.write("<br><br>");
+            document.write("date in format dd-mm-yyyy : "+dd+"-"+mm+"-"+yyyy+".");
+            document.write("<br><br>");
+            document.write("date in format dd/mm/yyyy : "+dd+"/"+mm+"/"+yyyy+".");
+        </script>
+    </body>
+</html>
+
