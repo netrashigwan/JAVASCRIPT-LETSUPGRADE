@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY 1 A ASSIGNMENT !</title>
+    <h1>JAVASCRIPT PROGRAM TO EXPLORE AND EXPLAIN VARIOUS METHODS IN CONSOLE FUNCTION . </h1>
+</head>
+<body>
+    <p>time() :	Starts a timer (can track how long an operation takes</p>
+    <p>info() :	Outputs an informational message to the console</p>
+    <p>log() :	Outputs a message to the console</p>
+    <p>error()	: Outputs an error message to the console</p>
+    <p>warn() :	Outputs a warning message to the console</p>
+    <p>table() :	Displays tabular data as a table</p>
+    <p>count() :	Logs the number of times that this particular call to count() has been called</p>
+    <p>timeEnd() :	Stops a timer that was previously started by console.time()</p>
+    <p>clear() :	Clears the console</p>
+    <p>assert() :	Writes an error message to the console if the assertion is false.</p>
+    <P>trace() :	Outputs a stack trace to the console.</P>
+    <script>
+        alert("Click me to Proceed");
+        console.time('Time taken');
+        console.info("I am a javascript code !!");
+
+        console.log("Hey I am NETRA SHIGWAN !! ")
+        console.error("an error occured!");
+        console.warn("Hey this is a warning!!");
+
+        console.log('%c STUDENT DATA ','color:RED;')
+
+        var a = {name:"NETRA", age:"21", city:"MUMBAI"}
+        var b = {name:"RIDDHITA", age:"21", city:"MUMBAI"}
+        var c = {name:"HARSHADA", age:"21", city:"MUMBAI"}
+
+        
+    
+        console.table({a ,b ,c})
+
+        for (i = 0; i < 5; i++) 
+        {
+            console.count();
+        }
+
+        var myArr = ["Orange", "Banana", "Mango", "Kiwi" ];
+        console.assert(document.getElementById("demo"), myArr);
+
+        console.timeEnd('Time taken');
+    </script>
+    
+</body>
+</html>

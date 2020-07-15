@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY 1 A ASSIGNMENT !</title>
+    <h1>JAVASCRIPT PROGRAM TO DEMONSTRATE VAR , LET AND CONSTANT.</h1>
+</head>
+<body>
+    <p> var : Var is function scoped when it is declared within a function. 
+        This means that it is available and can be accessed only within that function.</p>
+
+    <p>let : Let allows you to declare variables that are limited to the scope of a block statement,
+         or expression on which it is used, unlike the var keyword, which defines a variable globally, 
+         or locally to an entire function regardless of block scope.</p>
+ 
+    <p>const : Variables declared with the const maintain constant values. 
+        const declarations share some similarities with let declarations.
+        const declarations can only be accessed within the block they were declared.</p>
+    
+    
+    <script>
+        console.log("----EXAMPLES OF VAR ----")
+        var x = 5;
+        var y = 6;
+        var z = x + y;
+        console.log("X + Y = ",z)
+
+        var price1 = 5;
+        var price2 = 6;
+        var total = price1 + price2;
+        console.log("price1 + price2 = ",total)
+
+        var name = "NETRA"; 
+        var age = 21;
+        var languages = ['Hindi','English','Marathi'];
+        console.log("name :",name,"  age : ",age," languages :",languages)
+        var friends = {
+            name:"RIDDHITA",
+            hobby:"SKETCHING",
+        }
+        console.log(friends)
+
+        var a = 10;
+        console.log(a);
+
+        var a = null;
+        console.log(a);
+
+        console.log("----EXAMPLES OF LET ----")
+        
+        {
+        let city;
+        let name = "NETRA"; 
+        name = "KALU";
+        console.log("Using Let: ", name);
+        }
+        console.log(name)
+
+        console.log("----EXAMPLES OF CONSTANT ----")
+        const fruits = ["mango", "apple"]
+        console.log(fruits)
+        fruits.push('banana');
+        console.log(fruits)
+        fruits = ["cherry","banana"]
+
+
+    </script>
+</body>
+</html>
